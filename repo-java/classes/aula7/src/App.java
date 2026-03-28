@@ -34,5 +34,36 @@ public class App {
         //caso o objeto original seja alterado, a copia (v3) tambem é modificado
         v1.modelo="Ka";
         System.out.println(v3.cor+" "+v3.marca+" "+v3.modelo);
+
+        //o por que nao usa atributos somente na main
+        String marca="VW";
+        String modelo="Gol";
+        String cor="Laranja";
+
+        //se colocar novamente na variavel/atributo será substituido
+        /*
+        String marca="VW";
+        String modelo="Gol";
+        String cor="Laranja";
+
+        da erro
+        */
+
+        // preciso alterar o nome do atributo
+            //hard-code = codigo fixo/engessado, má pratica
+        String marca1="VW";
+        String modelo1="Gol";
+        String cor1="Laranja";
+
+        //chamando o metodo dentro do sout e ele esta apenas exibindo
+        System.out.println(v1.validaQuantidadePortas(1));
+        System.out.println(v1.validaQuantidadePortas(4));
+
+        //criando uma variavel para receber o retorno metodo
+        boolean retorno = v1.validaQuantidadePortas(5);
+        System.out.println(retorno);
+
+        //chamando metodo para mostrar atributos publicos de veiculo
+        v1.imprimir();
     }
 }
