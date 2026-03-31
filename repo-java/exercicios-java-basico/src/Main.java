@@ -7,6 +7,7 @@ public class Main {
         //exerc3();
         //exerc4();
         //exerc5();
+        exerc6();
     }
 
     public static void exerc1() {
@@ -30,11 +31,11 @@ public class Main {
     public static void exerc2() {
         /*
         Crie um programa que solicite dois valores numéricos. O mesmo deverá
-calcular e exibir:
-a. A soma dos dois valores
-b. A multiplicação dos dois valores
-c. A subtração dos dois valores
-d. A divisão dos dois valores
+        calcular e exibir:
+        a. A soma dos dois valores
+        b. A multiplicação dos dois valores
+        c. A subtração dos dois valores
+        d. A divisão dos dois valores
         */
 
         Scanner sc = new Scanner(System.in);
@@ -96,14 +97,14 @@ novo salário com um aumento de 15%.
     public static void exerc5() {
         /*
         Uma loja paga aos seus vendedores:
-a. Salário base de R$ 1.800,00
-b. Comissão fixa de R$ 150,00 por produto vendido
-c. 3% sobre o valor total das vendas
-Escreva um programa que solicite:
-• Nome do vendedor
-• Quantidade de produtos vendidos
-• Valor total das vendas
-O programa deve calcular e exibir o salário final.
+        a. Salário base de R$ 1.800,00
+        b. Comissão fixa de R$ 150,00 por produto vendido
+        c. 3% sobre o valor total das vendas
+        Escreva um programa que solicite:
+        • Nome do vendedor
+        • Quantidade de produtos vendidos
+        • Valor total das vendas
+        O programa deve calcular e exibir o salário final.
         */
 
         Scanner sc = new Scanner(System.in);
@@ -124,7 +125,33 @@ O programa deve calcular e exibir o salário final.
         double salarioTotal = salarioBase + valorPorVendido + PercTotalVendas;
 
         System.out.printf("O salário total de é de R$ %.2f ", salarioTotal);
+    }
 
+    public static void exerc6() {
+        /*
+        Escreva um programa que receba dois números inteiros e troque seus
+        valores utilizando uma terceira variável auxiliar. Exiba os valores antes e
+        depois da troca.
+        */
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite a variável A:");
+        int a = sc.nextInt();
+
+        System.out.println("Digite a variável B:");
+        int b = sc.nextInt();
+        
+        System.out.println("A: " + a);
+        System.out.println("B: " + b);
+        
+        int c = a;
+        a = b;
+        b = c;
+
+        System.out.println("Depois da troca:");
+        System.out.println("A: " + a);
+        System.out.println("B: " + b);
+        
+        sc.close();
     }
 }
