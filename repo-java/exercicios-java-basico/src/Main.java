@@ -7,7 +7,9 @@ public class Main {
         //exerc3();
         //exerc4();
         //exerc5();
-        exerc6();
+        //exerc6();
+        //exerc7();
+        //exerc8();
     }
 
     public static void exerc1() {
@@ -55,7 +57,7 @@ public class Main {
     public static void exerc3() {
         /*
         Crie um programa que solicite o peso e altura de uma determinada
-pessoa e calcule o seu IMC (Índice de Massa Corpórea). A fórmula: IMC = peso / altura * altura
+        pessoa e calcule o seu IMC (Índice de Massa Corpórea). A fórmula: IMC = peso / altura * altura
         */
 
         Scanner sc = new Scanner(System.in);
@@ -79,7 +81,7 @@ pessoa e calcule o seu IMC (Índice de Massa Corpórea). A fórmula: IMC = peso 
     public static void exerc4() {
         /*
         Crie um programa que receba o salário de um funcionário e calcule o
-novo salário com um aumento de 15%. 
+        novo salário com um aumento de 15%. 
         */
 
         Scanner sc = new Scanner(System.in);
@@ -152,6 +154,50 @@ novo salário com um aumento de 15%.
         System.out.println("A: " + a);
         System.out.println("B: " + b);
         
+        sc.close();
+    }
+
+    public static void exerc7() {
+        /*
+        Escreva um programa que receba:
+        • Distância percorrida (km)
+        • Quantidade de combustível gasto (litros)
+        Calcule e exiba o consumo médio do veículo (km/l).
+        */
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite a distância percorrida em km:");
+        double qtdKm = sc.nextDouble();
+
+        System.out.println("Digite a quantidade de combustivel gasto: ");
+        double qtdLitros = sc.nextDouble();
+        
+        double consumoLitroPorKm = qtdKm / qtdLitros;
+
+        System.out.printf("O consumo médio de litro por km do veículo é de %.2f", consumoLitroPorKm);
+        System.out.print(" km/l");
+
+        sc.close();
+    }
+
+    public static void exerc8() {
+        /*
+        Escreva um programa que receba um valor em horas e converta para:
+        Minutos e Segundos
+        */
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite a hora:");
+        double hora = sc.nextDouble();
+
+        double minutos = hora * 60;
+        double segundos = hora * 3600;
+
+        System.out.printf("Horas para minutos: %.2f", minutos);
+        System.out.println();
+        System.out.printf("Horas para segundos: %.2f", segundos);
+
         sc.close();
     }
 }
