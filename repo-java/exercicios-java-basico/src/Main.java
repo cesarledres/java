@@ -52,6 +52,8 @@ public class Main {
         System.out.println("A subtração dos dois números é " + (num1 - num2));
         System.out.println("A multiplicação dos dois números é " + (num1 * num2));
         System.out.println("A divisão dos dois números é " + (num1 / num2));
+
+        sc.close();
     }
 
     public static void exerc3() {
@@ -127,6 +129,8 @@ public class Main {
         double salarioTotal = salarioBase + valorPorVendido + PercTotalVendas;
 
         System.out.printf("O salário total de é de R$ %.2f ", salarioTotal);
+
+        sc.close();
     }
 
     public static void exerc6() {
