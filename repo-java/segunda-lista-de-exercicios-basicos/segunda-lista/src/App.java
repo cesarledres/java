@@ -11,7 +11,7 @@ public class App {
         //exerc7();
         //exerc8();
         //exerc9();
-        exerc10();
+        //exerc10();
     }
     public static void exerc1() {
         /*
