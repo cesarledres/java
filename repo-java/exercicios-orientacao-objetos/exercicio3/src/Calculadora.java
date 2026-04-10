@@ -1,8 +1,14 @@
-import java.util.Scanner;
-
 public class Calculadora {
-    public int soma(int a) { //criar mais um argumento para "b"
-        int soma = a + b;
-        System.out.println("A soma dos dois valores é " + soma);
+    public int soma(int a, int b) {
+        return a + b;
+    }
+    public int subtracao(int a, int b) {
+        return a - b;
+    }
+    public int multiplicacao(int a, int b) {
+        return a * b;
+    }
+    public int divisao(int a, int b) {
+        return a / b;
     }
 }

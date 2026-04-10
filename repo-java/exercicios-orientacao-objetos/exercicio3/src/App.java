@@ -8,6 +8,18 @@ public class App {
 
         Calculadora calculadora = new Calculadora();
 
-        calculadora.soma()
+        int resultado = calculadora.soma(5, 3);
+        System.out.println("A soma dos dois valores é " + resultado);
+
+        resultado = calculadora.subtracao(20, 10);
+        System.out.println("A soma dos dois valores é " + resultado);
+
+        resultado = calculadora.multiplicacao(20, 2);
+        System.out.println("A soma dos dois valores é " + resultado);
+
+        resultado = calculadora.divisao(60, 2);
+        System.out.println("A soma dos dois valores é " + resultado);
+
+        resultado = 0;
     }
 }
